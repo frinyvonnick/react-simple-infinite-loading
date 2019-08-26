@@ -1,22 +1,49 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
+import { FixedSizeList as List } from 'react-window'
+import InfiniteLoader from 'react-window-infinite-loader'
+import AutoSizer from 'react-virtualized-auto-sizer'
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+InfiniteLoading.propTypes = {
+  children: PropTypes.func.isRequired,
+  items: PropTypes.array.isRequired,
+  itemHeight: PropTypes.number.isRequired,
+  loadMoreItems: PropTypes.func,
+  hasMoreItems: PropTypes.bool
+}
 
-  render() {
-    const {
-      text
-    } = this.props
+InfiniteLoading.defaultProps = {
+  loadMoreItems: () => {},
+  hasMoreItems: false
+}
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+export default function InfiniteLoading({ items, hasMoreItems, loadMoreItems, itemHeight, children }) {
+  const itemsCount = hasMoreItems ? items.length + 1 : items.length
+  const isItemLoaded = index => !hasMoreItems || index < items.length
+
+  return (
+    <AutoSizer>
+      {({ height, width }) => (
+        <InfiniteLoader
+          isItemLoaded={isItemLoaded}
+          itemCount={itemsCount}
+          loadMoreItems={loadMoreItems}
+        >
+          {({ onItemsRendered, ref }) => (
+            <List
+              height={height}
+              itemCount={itemsCount}
+              itemSize={itemHeight}
+              onItemsRendered={onItemsRendered}
+              ref={ref}
+              width={width}
+            >
+              {({ index, style }) => children({ item: items[index], index, style })}
+            </List>
+          )}
+        </InfiniteLoader>
+      )}
+    </AutoSizer>
+  )
 }
