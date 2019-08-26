@@ -6,7 +6,7 @@
 
 ## Why?
 
-I wrote an article about [creating an infinite loading list with React and GraphQL](https://dev.to/yvonnickfrin/create-an-infinite-loading-list-with-react-and-graphql-19hh). Someone pointed out the React implementation of the list was a bit complex. I figure out it was possible to right a abstract for this particular case. Here it is!
+I wrote an article about [creating an infinite loading list with React and GraphQL](https://dev.to/yvonnickfrin/create-an-infinite-loading-list-with-react-and-graphql-19hh). Someone pointed out the React implementation of the list was a bit complex. I figure out it was possible to write an abstract for this particular case. Here it is!
 
 This component aims to stay easy to use. If your use case needs more options I recommend using directly awesome libraries from [Brian Vaughn](https://github.com/bvaughn) listed in dependencies section.
 
@@ -19,29 +19,25 @@ npm install --save react-simple-infinite-loading
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
 import InfiniteLoadingList from 'react-simple-infinite-loading'
 
-class Example extends Component {
-  render () {
-    const items = Array.from({ length: 100 }).map((_, index) => index)
-
-    return (
-      <div style={{ width: 300, height: 300 }}>
-        <InfiniteLoading
-          items={items}
-          itemHeight={40}
-          hasMoreItems={false}
-          loadMoreItems={() => {}}
-        >
-          {({ item, style }) => (
-            <div style={style}>{item}</div>
-          )}
-        </InfiniteLoading>
-      </div>
-    )
-  }
+function Example ({ items, fetchMore }) {
+  return (
+    <div style={{ width: 300, height: 300 }}>
+      <InfiniteLoading
+        items={items}
+        itemHeight={40}
+        hasMoreItems={false}
+        loadMoreItems={fetchMore}
+      >
+        {({ item, style }) => (
+          <div style={style}>{item}</div>
+        )}
+      </InfiniteLoading>
+    </div>
+  )
 }
 ```
 
@@ -51,7 +47,7 @@ class Example extends Component {
 
 - [react-window](https://github.com/bvaughn/react-window) is made to display efficiently large lists. It only creates components for the visible elements and reuse nodes.
 - [react-window-infinite-loader](https://github.com/bvaughn/react-window-infinite-loader/) is a HOC that loads elements just-in-time as user scrolls down the list
-- [react-virtualized-auto-sizer](https://github.com/bvaughn/react-virtualized-auto-sizer/) help you displaying your list so it fits the space available in its parent container.
+- [react-virtualized-auto-sizer](https://github.com/bvaughn/react-virtualized-auto-sizer/) helps you displaying your list so it fits the space available in its parent container.
 
 ## Properties
 
@@ -60,9 +56,9 @@ class Example extends Component {
 |---|---|---|---|
 | children | yes | function | The children function should return the jsx for an item of the list. An object is passed as parameter containing `item`, `index`, `style`. *You must pass the style to top-level tag of your item's jsx*. |
 | items | yes | array | An array of elements. Any type of elements is accepted. |
-| itemHeight | yes | number | The height of an item. All items should have the same height |
-| hasMoreItems | no | boolean | A boolean that determines if there are still items to load using `loadMoreItems` function |
-| loadMoreItems | no | function | A function that will be called each time the list need to load more items |
+| itemHeight | yes | number | The height of an item. All items should have the same height. |
+| hasMoreItems | no | boolean | A boolean that determines if there are still items to load using `loadMoreItems` function. |
+| loadMoreItems | no | function | A function that will be called each time the list need to load more items. |
 
 ## License
 
