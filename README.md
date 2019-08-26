@@ -6,7 +6,7 @@
 
 ## Why?
 
-I wrote an article about [creating an infinite loading list with React and GraphQL](https://dev.to/yvonnickfrin/create-an-infinite-loading-list-with-react-and-graphql-19hh). Someone pointed out the React implementation of the list was a bit complex. I figure out it was possible to write an abstract for this particular case. Here it is!
+I wrote an article about [creating an infinite loading list with React and GraphQL](https://dev.to/yvonnickfrin/create-an-infinite-loading-list-with-react-and-graphql-19hh). Someone pointed out the React implementation of the list was a bit complex. I figure out it was possible to write an abstraction for this particular case. Here it is!
 
 This component aims to stay easy to use. If your use case needs more options I recommend using directly awesome libraries from [Brian Vaughn](https://github.com/bvaughn) listed in dependencies section.
 
@@ -23,13 +23,13 @@ import React from 'react'
 
 import InfiniteLoadingList from 'react-simple-infinite-loading'
 
-function Example ({ items, fetchMore }) {
+function Example ({ items, fetchMore, hasMore }) {
   return (
     <div style={{ width: 300, height: 300 }}>
       <InfiniteLoading
         items={items}
         itemHeight={40}
-        hasMoreItems={false}
+        hasMoreItems={hasMore}
         loadMoreItems={fetchMore}
       >
         {({ item, style }) => (
