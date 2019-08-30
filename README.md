@@ -19,11 +19,11 @@ npm install --save react-simple-infinite-loading
 ## Usage
 
 ```jsx
-import React from 'react'
+import React from 'react';
 
-import InfiniteLoadingList from 'react-simple-infinite-loading'
+import InfiniteLoadingList from 'react-simple-infinite-loading';
 
-function Example ({ items, fetchMore, hasMore }) {
+function Example({ items, fetchMore, hasMore }) {
   return (
     <div style={{ width: 300, height: 300 }}>
       <InfiniteLoading
@@ -32,12 +32,10 @@ function Example ({ items, fetchMore, hasMore }) {
         hasMoreItems={hasMore}
         loadMoreItems={fetchMore}
       >
-        {({ item, style }) => (
-          <div style={style}>{item}</div>
-        )}
+        {({ item }) => <div>{item}</div>}
       </InfiniteLoading>
     </div>
-  )
+  );
 }
 ```
 
@@ -51,14 +49,13 @@ function Example ({ items, fetchMore, hasMore }) {
 
 ## Properties
 
-
-| property name | required | type | description |
-|---|---|---|---|
-| children | yes | function | The children function should return the jsx for an item of the list. An object is passed as parameter containing `item`, `index`, `style`. *You must pass the style to top-level tag of your item's jsx*. |
-| items | yes | array | An array of elements. Any type of elements is accepted. |
-| itemHeight | yes | number | The height of an item. All items should have the same height. |
-| hasMoreItems | no | boolean | A boolean that determines if there are still items to load using `loadMoreItems` function. |
-| loadMoreItems | no | function | A function that will be called each time the list need to load more items. |
+| property name | required | type     | description                                                                                                                                                                                               |
+| ------------- | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| children      | yes      | function | The children function should return the jsx for an item of the list. An object is passed as parameter containing `item`, `index`, `style`. _You must pass the style to top-level tag of your item's jsx_. |
+| items         | yes      | array    | An array of elements. Any type of elements is accepted.                                                                                                                                                   |
+| itemHeight    | yes      | number   | The height of an item. All items should have the same height.                                                                                                                                             |
+| hasMoreItems  | no       | boolean  | A boolean that determines if there are still items to load using `loadMoreItems` function.                                                                                                                |
+| loadMoreItems | no       | function | A function that will be called each time the list need to load more items.                                                                                                                                |
 
 ## License
 

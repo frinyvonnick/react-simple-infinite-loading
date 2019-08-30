@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { cloneElement } from 'react';
+import PropTypes from 'prop-types';
 
-import { FixedSizeList as List } from 'react-window'
-import InfiniteLoader from 'react-window-infinite-loader'
-import AutoSizer from 'react-virtualized-auto-sizer'
+import { FixedSizeList as List } from 'react-window';
+import InfiniteLoader from 'react-window-infinite-loader';
+import AutoSizer from 'react-virtualized-auto-sizer';
 
 InfiniteLoading.propTypes = {
   children: PropTypes.func.isRequired,
@@ -11,16 +11,25 @@ InfiniteLoading.propTypes = {
   itemHeight: PropTypes.number.isRequired,
   loadMoreItems: PropTypes.func,
   hasMoreItems: PropTypes.bool
-}
+};
 
 InfiniteLoading.defaultProps = {
   loadMoreItems: () => {},
   hasMoreItems: false
-}
+};
 
-export default function InfiniteLoading({ items, hasMoreItems, loadMoreItems, itemHeight, children }) {
-  const itemsCount = hasMoreItems ? items.length + 1 : items.length
-  const isItemLoaded = index => !hasMoreItems || index < items.length
+const cloneWithStyle = (child, style) =>
+  cloneElement(child, { style: { ...style, ...child.props.style } });
+
+export default function InfiniteLoading({
+  items,
+  hasMoreItems,
+  loadMoreItems,
+  itemHeight,
+  children
+}) {
+  const itemsCount = hasMoreItems ? items.length + 1 : items.length;
+  const isItemLoaded = index => !hasMoreItems || index < items.length;
 
   return (
     <AutoSizer>
@@ -39,11 +48,13 @@ export default function InfiniteLoading({ items, hasMoreItems, loadMoreItems, it
               ref={ref}
               width={width}
             >
-              {({ index, style }) => children({ item: items[index], index, style })}
+              {({ index, style }) =>
+                cloneWithStyle(children({ item: items[index], index }), style)
+              }
             </List>
           )}
         </InfiniteLoader>
       )}
     </AutoSizer>
-  )
+  );
 }
