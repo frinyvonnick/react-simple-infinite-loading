@@ -19,9 +19,9 @@ npm install --save react-simple-infinite-loading
 ## Usage
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
-import InfiniteLoadingList from 'react-simple-infinite-loading';
+import InfiniteLoadingList from 'react-simple-infinite-loading'
 
 function Example({ items, fetchMore, hasMore }) {
   return (
@@ -35,7 +35,7 @@ function Example({ items, fetchMore, hasMore }) {
         {({ item }) => <div>{item}</div>}
       </InfiniteLoading>
     </div>
-  );
+  )
 }
 ```
 

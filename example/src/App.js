@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import InfiniteLoading from 'react-simple-infinite-loading';
+import InfiniteLoading from 'react-simple-infinite-loading'
 
 export default function App() {
-  const items = [...Array(100)].map((_, index) => index);
+  const items = [...Array(100)].map((_, index) => index)
 
   return (
     <div style={{ width: 300, height: 300 }}>
@@ -16,5 +16,5 @@ export default function App() {
         {({ item }) => <div>{item}</div>}
       </InfiniteLoading>
     </div>
-  );
+  )
 }
