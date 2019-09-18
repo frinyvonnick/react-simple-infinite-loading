@@ -18,7 +18,13 @@ InfiniteLoading.defaultProps = {
   hasMoreItems: false
 }
 
-export default function InfiniteLoading({ items, hasMoreItems, loadMoreItems, itemHeight, children }) {
+export default function InfiniteLoading({
+  items,
+  hasMoreItems,
+  loadMoreItems,
+  itemHeight,
+  children
+}) {
   const itemsCount = hasMoreItems ? items.length + 1 : items.length
   const isItemLoaded = index => !hasMoreItems || index < items.length
 
@@ -39,7 +45,9 @@ export default function InfiniteLoading({ items, hasMoreItems, loadMoreItems, it
               ref={ref}
               width={width}
             >
-              {({ index, style }) => children({ item: items[index], index, style })}
+              {({ index, style }) =>
+                <div style={style}>{children({ item: items[index], index })}</div>
+              }
             </List>
           )}
         </InfiniteLoader>
