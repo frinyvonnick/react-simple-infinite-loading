@@ -8,12 +8,11 @@ export default function App() {
   return (
     <div style={{ width: 300, height: 300 }}>
       <InfiniteLoading
-        items={items}
-        itemHeight={40}
         hasMoreItems={false}
+        itemHeight={40}
         loadMoreItems={() => {}}
       >
-        {({ item }) => <div>{item}</div>}
+        {items.map(item => <div key={item}>{item}</div>)}
       </InfiniteLoading>
     </div>
   )
