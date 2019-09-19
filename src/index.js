@@ -44,7 +44,7 @@ export default function InfiniteLoading({
               width={width}
             >
               {({ index, style }) => (
-                <div style={{ ...style, backgroundColor: '#ff0' }}>
+                <div style={style}>
                   {children[index]}
                 </div>
               )}
