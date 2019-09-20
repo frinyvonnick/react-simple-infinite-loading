@@ -27,12 +27,11 @@ function Example({ items, fetchMore, hasMore }) {
   return (
     <div style={{ width: 300, height: 300 }}>
       <InfiniteLoading
-        items={items}
-        itemHeight={40}
         hasMoreItems={hasMore}
+        itemHeight={40}
         loadMoreItems={fetchMore}
       >
-        {({ item }) => <div>{item}</div>}
+        {items.map(item => <div key={item}>{item}</div>)}
       </InfiniteLoading>
     </div>
   )

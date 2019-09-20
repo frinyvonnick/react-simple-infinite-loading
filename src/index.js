@@ -6,27 +6,25 @@ import InfiniteLoader from 'react-window-infinite-loader'
 import AutoSizer from 'react-virtualized-auto-sizer'
 
 InfiniteLoading.propTypes = {
-  children: PropTypes.func.isRequired,
-  items: PropTypes.array.isRequired,
+  children: PropTypes.array.isRequired,
+  hasMoreItems: PropTypes.bool,
   itemHeight: PropTypes.number.isRequired,
-  loadMoreItems: PropTypes.func,
-  hasMoreItems: PropTypes.bool
+  loadMoreItems: PropTypes.func
 }
 
 InfiniteLoading.defaultProps = {
-  loadMoreItems: () => {},
-  hasMoreItems: false
+  hasMoreItems: false,
+  loadMoreItems: () => {}
 }
 
 export default function InfiniteLoading({
-  items,
+  children,
   hasMoreItems,
-  loadMoreItems,
   itemHeight,
-  children
+  loadMoreItems
 }) {
-  const itemsCount = hasMoreItems ? items.length + 1 : items.length
-  const isItemLoaded = index => !hasMoreItems || index < items.length
+  const itemsCount = hasMoreItems ? children.length + 1 : children.length
+  const isItemLoaded = index => !hasMoreItems || index < children.length
 
   return (
     <AutoSizer>
@@ -45,9 +43,11 @@ export default function InfiniteLoading({
               ref={ref}
               width={width}
             >
-              {({ index, style }) =>
-                <div style={style}>{children({ item: items[index], index })}</div>
-              }
+              {({ index, style }) => (
+                <div style={style}>
+                  {children[index]}
+                </div>
+              )}
             </List>
           )}
         </InfiniteLoader>
