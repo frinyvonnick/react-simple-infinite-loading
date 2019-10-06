@@ -1,14 +1,14 @@
 {
   "projectName": "react-simple-infinite-loading",
-  "projectOwner": "keremh",
+  "projectOwner": "frinyvonnick",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
-  "imageSize": 1000,
+  "imageSize": 100,
   "commit": true,
-  "commitConvention": "none",
+  "commitConvention": "atom",
   "contributors": [
     {
       "login": "frinyvonnick",
