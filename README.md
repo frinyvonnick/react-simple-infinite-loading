@@ -1,5 +1,5 @@
 # react-simple-infinite-loading
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
@@ -76,6 +76,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://yvonnickfrin.dev"><img src="https://avatars0.githubusercontent.com/u/13099512?v=4" width="100px;" alt="Yvonnick FRIN"/><br /><sub><b>Yvonnick FRIN</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=frinyvonnick" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/AugustoConti"><img src="https://avatars1.githubusercontent.com/u/8778672?v=4" width="100px;" alt="Augusto"/><br /><sub><b>Augusto</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=AugustoConti" title="Documentation">📖</a></td>
     <td align="center"><a href="https://henry-ns.github.io/portfolio/"><img src="https://avatars0.githubusercontent.com/u/16365204?v=4" width="100px;" alt="Henrique Martins"/><br /><sub><b>Henrique Martins</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=henry-ns" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Taranys"><img src="https://avatars2.githubusercontent.com/u/4621525?v=4" width="100px;" alt="Yoann Prot"/><br /><sub><b>Yoann Prot</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=Taranys" title="Documentation">📖</a></td>
   </tr>
 </table>
 
