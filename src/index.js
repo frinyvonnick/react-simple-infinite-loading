@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 
 import { FixedSizeList as List } from 'react-window'
-import InfiniteLoader from 'react-window-infinite-loader'
 import AutoSizer from 'react-virtualized-auto-sizer'
+import InfiniteLoader from 'react-window-infinite-loader'
 
 InfiniteLoading.propTypes = {
-  children: PropTypes.array.isRequired,
   hasMoreItems: PropTypes.bool,
-  itemHeight: PropTypes.number.isRequired,
-  loadMoreItems: PropTypes.func
+  loadMoreItems: PropTypes.func,
+  children: PropTypes.array.isRequired,
+  itemHeight: PropTypes.number.isRequired
 }
 
 InfiniteLoading.defaultProps = {
@@ -17,12 +17,12 @@ InfiniteLoading.defaultProps = {
   loadMoreItems: () => {}
 }
 
-export default function InfiniteLoading({
+function InfiniteLoading({
   children,
   hasMoreItems,
   itemHeight,
   loadMoreItems
-}) {
+}, ref) {
   const itemsCount = hasMoreItems ? children.length + 1 : children.length
   const isItemLoaded = index => !hasMoreItems || index < children.length
 
@@ -33,6 +33,7 @@ export default function InfiniteLoading({
           isItemLoaded={isItemLoaded}
           itemCount={itemsCount}
           loadMoreItems={loadMoreItems}
+          ref={ref}
         >
           {({ onItemsRendered, ref }) => (
             <List
@@ -55,3 +56,5 @@ export default function InfiniteLoading({
     </AutoSizer>
   )
 }
+
+export default forwardRef(InfiniteLoading)
