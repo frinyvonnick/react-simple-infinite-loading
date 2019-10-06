@@ -27,6 +27,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "henry-ns",
+      "name": "Henrique Martins",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16365204?v=4",
+      "profile": "https://henry-ns.github.io/portfolio/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
