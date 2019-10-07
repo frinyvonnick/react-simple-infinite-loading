@@ -1,0 +1,51 @@
+{
+  "projectName": "react-simple-infinite-loading",
+  "projectOwner": "frinyvonnick",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "atom",
+  "contributors": [
+    {
+      "login": "frinyvonnick",
+      "name": "Yvonnick FRIN",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13099512?v=4",
+      "profile": "https://yvonnickfrin.dev",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "AugustoConti",
+      "name": "Augusto",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/8778672?v=4",
+      "profile": "https://github.com/AugustoConti",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "henry-ns",
+      "name": "Henrique Martins",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16365204?v=4",
+      "profile": "https://henry-ns.github.io/portfolio/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Taranys",
+      "name": "Yoann Prot",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4621525?v=4",
+      "profile": "https://github.com/Taranys",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
