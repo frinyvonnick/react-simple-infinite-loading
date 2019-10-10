@@ -22,7 +22,7 @@ npm install --save react-simple-infinite-loading
 ```jsx
 import React from 'react'
 
-import InfiniteLoadingList from 'react-simple-infinite-loading'
+import InfiniteLoading from 'react-simple-infinite-loading'
 
 function Example({ items, fetchMore, hasMore }) {
   return (
