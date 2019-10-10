@@ -9,7 +9,8 @@ InfiniteLoading.propTypes = {
   hasMoreItems: PropTypes.bool,
   loadMoreItems: PropTypes.func,
   children: PropTypes.array.isRequired,
-  itemHeight: PropTypes.number.isRequired
+  itemHeight: PropTypes.number.isRequired,
+  placeholder: PropTypes.node
 }
 
 InfiniteLoading.defaultProps = {
@@ -21,7 +22,8 @@ function InfiniteLoading({
   children,
   hasMoreItems,
   itemHeight,
-  loadMoreItems
+  loadMoreItems,
+  placeholder
 }, ref) {
   const itemsCount = hasMoreItems ? children.length + 1 : children.length
   const isItemLoaded = index => !hasMoreItems || index < children.length
@@ -46,7 +48,7 @@ function InfiniteLoading({
             >
               {({ index, style }) => (
                 <div style={style}>
-                  {children[index]}
+                  {children[index] != null ? children[index] : placeholder}
                 </div>
               )}
             </List>
