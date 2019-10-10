@@ -46,7 +46,7 @@
         "doc"
       ]
     },
-     {
+    {
       "login": "Orodan",
       "name": "Jimmy Kasprzak",
       "avatar_url": "https://avatars1.githubusercontent.com/u/7422824?v=4",
@@ -60,9 +60,17 @@
       "name": "Kerem Hallaç",
       "avatar_url": "https://avatars3.githubusercontent.com/u/6216601?v=4",
       "profile": "https://about.me/hallackerem",
-
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "trybick",
+      "name": "Tim",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/39889198?v=4",
+      "profile": "https://timrybicki.com",
+      "contributions": [
+        "doc"
       ]
     }
   ],
