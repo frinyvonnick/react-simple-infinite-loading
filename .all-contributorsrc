@@ -46,11 +46,21 @@
         "doc"
       ]
     },
-    {
+     {
       "login": "Orodan",
       "name": "Jimmy Kasprzak",
       "avatar_url": "https://avatars1.githubusercontent.com/u/7422824?v=4",
       "profile": "https://github.com/Orodan",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "keremh",
+      "name": "Kerem Hallaç",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6216601?v=4",
+      "profile": "https://about.me/hallackerem",
+
       "contributions": [
         "code"
       ]
