@@ -9,6 +9,7 @@ import svgr from '@svgr/rollup'
 import pkg from './package.json'
 
 export default {
+  external: [ 'react-virtualized-auto-sizer', 'react-window', 'react-window-infinite-loader' ],
   input: 'src/index.js',
   output: [
     {
