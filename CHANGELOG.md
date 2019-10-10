@@ -1,5 +1,22 @@
 # Changelog
 
+<a name="1.0.0-alpha.5"></a>
+## 1.0.0-alpha.5 (2019-10-10)
+
+### Added
+
+- ✨ Add the possibility to pass  down ref to react-window-infinite-loader ([#9](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/9)) [[3795271](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/37952710aa3586ba9cd70764d78f44b57b798a19)]
+
+### Changed
+
+- ♻️ Replace children function by an array ([#7](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/7)) [[22357c5](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/22357c5abc2ea232132f92193050aa07eea15c20)]
+
+### Miscellaneous
+
+- 📦 Define dependencies as external in rollup config ([#12](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/12)) [[5d4a10b](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/5d4a10b10b3bac169b977ef1f562273391854f61)]
+- 📝 Add contributors section in README.md [#10](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/10) ([#11](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/11)) [[2446fa2](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/2446fa2aa97f06a73ad20e8562bf468bd67b7577)]
+
+
 <a name="1.0.0-alpha.4"></a>
 ## 1.0.0-alpha.4 (2019-09-18)
 
