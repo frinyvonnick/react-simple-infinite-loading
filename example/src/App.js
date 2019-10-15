@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import InfiniteLoading from 'react-simple-infinite-loading'
 
 export default function App() {
@@ -17,13 +16,16 @@ export default function App() {
   }
 
   return (
-    <div style={{ width: 300, height: 300 }}>
+    <div className="app">
+      <h1>React simple infinite loading example</h1>
+
+      <h2>Start scrolling here :</h2>
       <InfiniteLoading
         hasMoreItems
         itemHeight={40}
         loadMoreItems={loadMoreItems}
       >
-        {items.map(item => <div key={item}>{item}</div>)}
+        {items.map(item => <div className="item" key={item}>{item}</div>)}
       </InfiniteLoading>
     </div>
   )
