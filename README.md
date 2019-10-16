@@ -11,6 +11,10 @@ I wrote an article about [creating an infinite loading list with React and Graph
 
 This component aims to stay easy to use. If your use case needs more options I recommend using directly awesome libraries from [Brian Vaughn](https://github.com/bvaughn) listed in dependencies section.
 
+## Demo
+
+You can find a demo [here](https://codesandbox.io/s/magical-shockley-vhkz8).
+
 ## Install
 
 ```bash
