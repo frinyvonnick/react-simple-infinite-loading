@@ -43,6 +43,8 @@ function Example({ items, fetchMore, hasMore }) {
 }
 ```
 
+[Link to example](/example/README.md)
+
 ## Dependencies
 
 `react-simple-infinite-loading` has only three dependencies:
