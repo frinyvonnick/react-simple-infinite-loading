@@ -1,5 +1,25 @@
 # Changelog
 
+<a name="1.0.0-alpha.6"></a>
+## 1.0.0-alpha.6 (2019-10-18)
+
+### Added
+
+- ✨ Add a placeholder property ([#20](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/20)) [[b05cb6f](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/b05cb6fa1aa3547e3fe90babdac6c1d18f33bfbc)]
+
+### Miscellaneous
+
+- 📝 Improve example functionality and ui ([#25](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/25)) [[4913a39](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/4913a391f8812e62e28de25ea9d99eb5da4faa41)]
+- 📝 Improve example documentation ([#23](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/23)) [[18218a6](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/18218a6af398a26947be73cf269a67726758ee54)]
+- 📝 Add demo link to readme ([#27](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/27)) [[cde6a4b](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/cde6a4b527ba970e6d076acfd9a22adfeeedf0b1)]
+- 👥 Update trybick contributions type ([#22](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/22)) [[d4f3bd6](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/d4f3bd63155311b72343169a9fda02610cf3ef75)]
+- 👥 Add trybick as a contributor ([#21](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/21)) [[1b744a8](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/1b744a829cede22f23031afdb76e07de3ae7274f)]
+- 📝 Fix import statement in usage section ([#19](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/19)) [[c391d9b](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/c391d9bfb1fa98422035b56629d87db3e32fa211)]
+- 📝 Change contributions type in contributors section [[94b8561](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/94b8561b88f8d05a66740eada3e96e90c084a249)]
+- 👥 Add keremh as a contributor ([#16](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/16)) [[e33ec7d](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/e33ec7dd226649812bce5b6f3829cb801e5989cf)]
+- 👥 Add Orodan as a contributor ([#15](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/15)) [[08c1c5c](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/08c1c5cb3c0a294b0f6a0e3c9cbf757533dd40cb)]
+
+
 <a name="1.0.0-alpha.5"></a>
 ## 1.0.0-alpha.5 (2019-10-10)
 
