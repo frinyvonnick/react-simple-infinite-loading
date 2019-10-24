@@ -8,6 +8,7 @@ import InfiniteLoader from 'react-window-infinite-loader'
 InfiniteLoading.propTypes = {
   hasMoreItems: PropTypes.bool,
   loadMoreItems: PropTypes.func,
+  itemsCount: PropTypes.number,
   children: PropTypes.array.isRequired,
   itemHeight: PropTypes.number.isRequired,
   placeholder: PropTypes.node
@@ -21,11 +22,16 @@ InfiniteLoading.defaultProps = {
 function InfiniteLoading({
   children,
   hasMoreItems,
+  itemsCount,
   itemHeight,
   loadMoreItems,
   placeholder
 }, ref) {
-  const itemsCount = hasMoreItems ? children.length + 1 : children.length
+  let effectiveCount = itemsCount
+  if (effectiveCount === undefined) {
+      effectiveCount = hasMoreItems ? children.length + 1 : children.length
+  }
+
   const isItemLoaded = index => !hasMoreItems || index < children.length
 
   return (
@@ -33,14 +39,14 @@ function InfiniteLoading({
       {({ height, width }) => (
         <InfiniteLoader
           isItemLoaded={isItemLoaded}
-          itemCount={itemsCount}
+          itemCount={effectiveCount}
           loadMoreItems={loadMoreItems}
           ref={ref}
         >
           {({ onItemsRendered, ref }) => (
             <List
               height={height}
-              itemCount={itemsCount}
+              itemCount={effectiveCount}
               itemSize={itemHeight}
               onItemsRendered={onItemsRendered}
               ref={ref}
