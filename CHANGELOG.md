@@ -1,5 +1,22 @@
 # Changelog
 
+<a name="1.0.0-alpha.7"></a>
+## 1.0.0-alpha.7 (2019-10-25)
+
+### Added
+
+- ✨ Add an itemsCount prop to InfiniteLoader ([#28](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/28)) [[57efe2a](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/57efe2aef526a783d0e0816dc8792aa7ee006eb6)]
+
+### Removed
+
+- 🔥 Remove allcontributors badge [[f64328d](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/f64328d0cf3cee380b867a9f7e1a190229ed453d)]
+
+### Miscellaneous
+
+- 📝 Add gitmoji-changelog badge [[d90c3a5](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/d90c3a5260df8de6faab1dc7f706ac2dbcc7224d)]
+- 👥 Add gVirtu as a contributor ([#30](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/30)) [[6cf2229](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/6cf2229c623a4bc0ccb72cbf2a6a34904303bb1b)]
+
+
 <a name="1.0.0-alpha.6"></a>
 ## 1.0.0-alpha.6 (2019-10-18)
 
