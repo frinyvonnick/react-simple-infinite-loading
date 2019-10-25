@@ -1,7 +1,4 @@
 # react-simple-infinite-loading
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
-
->
 
 [![NPM](https://img.shields.io/npm/v/react-simple-infinite-loading.svg)](https://www.npmjs.com/package/react-simple-infinite-loading) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
