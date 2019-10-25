@@ -84,6 +84,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://about.me/hallackerem"><img src="https://avatars3.githubusercontent.com/u/6216601?v=4" width="100px;" alt="Kerem Hallaç"/><br /><sub><b>Kerem Hallaç</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=keremh" title="Code">💻</a></td>
     <td align="center"><a href="https://timrybicki.com"><img src="https://avatars3.githubusercontent.com/u/39889198?v=4" width="100px;" alt="Tim"/><br /><sub><b>Tim</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=trybick" title="Documentation">📖</a> <a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=trybick" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/gVirtu"><img src="https://avatars1.githubusercontent.com/u/15658199?v=4" width="100px;" alt="Giancarlo França"/><br /><sub><b>Giancarlo França</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=gVirtu" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
