@@ -61,6 +61,7 @@ function Example({ items, fetchMore, hasMore }) {
 | hasMoreItems  | no       | boolean  | A boolean that determines if there are still items to load using `loadMoreItems` function.                                                                                                                |
 | loadMoreItems | no       | function | A function that will be called each time the list need to load more items.                                                                                                                                |
 | placeholder   | no       | node     | Any render-able value like strings or React.Nodes to be displayed while `children` is loading                                                                                                             |
+| customScrollbar   | no       | boolean     | A boolean that determines if [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars) is used instead of native one                                                      |
 
 ## License
 
