@@ -70,22 +70,26 @@ Apache-2.0 © [frinyvonnick](https://github.com/frinyvonnick)
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://yvonnickfrin.dev"><img src="https://avatars0.githubusercontent.com/u/13099512?v=4" width="100px;" alt="Yvonnick FRIN"/><br /><sub><b>Yvonnick FRIN</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=frinyvonnick" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/AugustoConti"><img src="https://avatars1.githubusercontent.com/u/8778672?v=4" width="100px;" alt="Augusto"/><br /><sub><b>Augusto</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=AugustoConti" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://henry-ns.github.io/portfolio/"><img src="https://avatars0.githubusercontent.com/u/16365204?v=4" width="100px;" alt="Henrique Martins"/><br /><sub><b>Henrique Martins</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=henry-ns" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Taranys"><img src="https://avatars2.githubusercontent.com/u/4621525?v=4" width="100px;" alt="Yoann Prot"/><br /><sub><b>Yoann Prot</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=Taranys" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Orodan"><img src="https://avatars1.githubusercontent.com/u/7422824?v=4" width="100px;" alt="Jimmy Kasprzak"/><br /><sub><b>Jimmy Kasprzak</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=Orodan" title="Code">💻</a></td>
-    <td align="center"><a href="https://about.me/hallackerem"><img src="https://avatars3.githubusercontent.com/u/6216601?v=4" width="100px;" alt="Kerem Hallaç"/><br /><sub><b>Kerem Hallaç</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=keremh" title="Code">💻</a></td>
-    <td align="center"><a href="https://timrybicki.com"><img src="https://avatars3.githubusercontent.com/u/39889198?v=4" width="100px;" alt="Tim"/><br /><sub><b>Tim</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=trybick" title="Documentation">📖</a> <a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=trybick" title="Code">💻</a></td>
+    <td align="center"><a href="https://yvonnickfrin.dev"><img src="https://avatars0.githubusercontent.com/u/13099512?v=4" width="100px;" alt=""/><br /><sub><b>Yvonnick FRIN</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=frinyvonnick" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/AugustoConti"><img src="https://avatars1.githubusercontent.com/u/8778672?v=4" width="100px;" alt=""/><br /><sub><b>Augusto</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=AugustoConti" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://henry-ns.github.io/portfolio/"><img src="https://avatars0.githubusercontent.com/u/16365204?v=4" width="100px;" alt=""/><br /><sub><b>Henrique Martins</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=henry-ns" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Taranys"><img src="https://avatars2.githubusercontent.com/u/4621525?v=4" width="100px;" alt=""/><br /><sub><b>Yoann Prot</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=Taranys" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Orodan"><img src="https://avatars1.githubusercontent.com/u/7422824?v=4" width="100px;" alt=""/><br /><sub><b>Jimmy Kasprzak</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=Orodan" title="Code">💻</a></td>
+    <td align="center"><a href="https://about.me/hallackerem"><img src="https://avatars3.githubusercontent.com/u/6216601?v=4" width="100px;" alt=""/><br /><sub><b>Kerem Hallaç</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=keremh" title="Code">💻</a></td>
+    <td align="center"><a href="https://timrybicki.com"><img src="https://avatars3.githubusercontent.com/u/39889198?v=4" width="100px;" alt=""/><br /><sub><b>Tim</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=trybick" title="Documentation">📖</a> <a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=trybick" title="Code">💻</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/gVirtu"><img src="https://avatars1.githubusercontent.com/u/15658199?v=4" width="100px;" alt="Giancarlo França"/><br /><sub><b>Giancarlo França</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=gVirtu" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/gVirtu"><img src="https://avatars1.githubusercontent.com/u/15658199?v=4" width="100px;" alt=""/><br /><sub><b>Giancarlo França</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=gVirtu" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/gilesbradshaw"><img src="https://avatars0.githubusercontent.com/u/597115?v=4" width="100px;" alt=""/><br /><sub><b>Giles</b></sub></a><br /><a href="https://github.com/frinyvonnick/react-simple-infinite-loading/commits?author=gilesbradshaw" title="Code">💻</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
