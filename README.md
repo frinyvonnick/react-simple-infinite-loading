@@ -74,7 +74,7 @@ see [FixedSizeList](https://react-window.now.sh/#/api/FixedSizeList) methods sec
 
 see [FixedSizeList](https://react-window.now.sh/#/api/FixedSizeList) methods section.
 
-**resetloadMoreCache(): void**
+**resetloadMoreItemsCache(): void**
 
 Clear previously loaded items from cache.
 
