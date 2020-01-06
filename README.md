@@ -62,6 +62,65 @@ function Example({ items, fetchMore, hasMore }) {
 | loadMoreItems | no       | function | A function that will be called each time the list need to load more items.                                                                                                                                |
 | placeholder   | no       | node     | Any render-able value like strings or React.Nodes to be displayed while `children` is loading                                                                                                             |
 | customScrollbar   | no       | boolean     | A boolean that determines if [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars) is used instead of native one                                                      |
+| ref   | no       | ref or function     | A ref or a callback ref to get component instance so you can call instance's methods (see [Methods section](/README.md#methods))                                                     |
+
+## Methods
+
+**scrollTo(scrollOffset: number): void**
+
+see [FixedSizeList](https://react-window.now.sh/#/api/FixedSizeList) methods section.
+
+**scrollToItem(index: number, align: string = "auto"): void**
+
+see [FixedSizeList](https://react-window.now.sh/#/api/FixedSizeList) methods section.
+
+**resetloadMoreCache(): void**
+
+Clear previously loaded items from cache.
+
+example
+```jsx
+import React from 'react'
+
+import InfiniteLoading from 'react-simple-infinite-loading'
+
+function Example({ items, fetchMore, hasMore }) {
+  const ref = React.useRef()
+  const scrollToTop = () => {
+    if (ref.current) {
+      ref.current.scrollTo(0)
+    }
+  }
+  const scrollTo50 = () => {
+    if (ref.current) {
+      ref.current.scrollToItem(50)
+    }
+  }
+  const resetCache = () => {
+    if (ref.current) {
+      ref.current.resetloadMoreItemsCache()
+    }
+  }
+
+  return (
+    <>
+      <button onClick={scrollToTop}>Scroll to top</button>
+      <button onClick={scrollTo50}>Scroll to 50</button>
+      <button onClick={resetCache}>Reset cache</button>
+      <div style={{ width: 300, height: 300 }}>
+        <InfiniteLoading
+          hasMoreItems={hasMore}
+          itemHeight={40}
+          loadMoreItems={fetchMore}
+          ref={ref}
+        >
+          {items.map(item => <div key={item}>{item}</div>)}
+        </InfiniteLoading>
+      </div>
+    </>
+  )
+}
+```
 
 ## License
 
