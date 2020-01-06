@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.0.0-alpha.8"></a>
+## 1.0.0-alpha.8 (2020-01-06)
+
+### Added
+
+- ✨ Expose internal methods using ref ([#38](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/38)) [[50fb563](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/50fb56362ccdfbf8840bd7207081444cf7e9920c)] (by Yvonnick FRIN)
+- ✨ Add the possibility to customize the scrollbar ([#32](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/32)) [[41c4616](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/41c4616ba6dd6003942db4654b138a25f59e6201)] (by Yvonnick FRIN)
+
+### Changed
+
+- 🚨 Remove React warning about forwardRef ([#33](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/33)) [[3b83ea9](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/3b83ea9d71ec299b680b220616866155d909e191)] (by Giles)
+
+
 <a name="1.0.0-alpha.7"></a>
 ## 1.0.0-alpha.7 (2019-10-25)
 
