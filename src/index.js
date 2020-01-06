@@ -1,4 +1,4 @@
-import React, { forwardRef, useCallback } from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 
 import { FixedSizeList as List } from 'react-window'
@@ -69,13 +69,13 @@ CustomScrollbars.propTypes = {
 }
 
 function CustomScrollbars ({ onScroll, forwardedRef, style, children }) {
-  const refSetter = useCallback(scrollbarsRef => {
+  const refSetter = scrollbarsRef => {
     if (scrollbarsRef) {
       forwardedRef(scrollbarsRef.view)
     } else {
       forwardedRef(null)
     }
-  }, [])
+  }
 
   return (
     <Scrollbars
