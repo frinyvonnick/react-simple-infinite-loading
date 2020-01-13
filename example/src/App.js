@@ -50,20 +50,33 @@ export default function App() {
     <div className="app">
       <h1>React simple infinite loading example</h1>
 
-      <button onClick={scrollToTop}>Scroll to top</button>
-      <button onClick={scrollTo50}>Scroll to 50</button>
-      <button onClick={resetCache}>Reset cache</button>
-      <h2>Start scrolling here :</h2>
-      <InfiniteLoading
-        hasMoreItems={hasMoreCharacters}
-        itemHeight={40}
-        loadMoreItems={loadMoreCharacters}
-        placeholder={<div className="item">Loading...</div>}
-        customScrollbar
-        ref={ref}
-      >
-        {characters.map(character => <div className="item" key={character.name}>{character.name}</div>)}
-      </InfiniteLoading>
+      <div className="buttons">
+        <button onClick={scrollToTop}>Scroll to top</button>
+        <button onClick={scrollTo50}>Scroll to 50</button>
+        <button onClick={resetCache}>Reset cache</button>
+      </div>
+
+      <div className="list-container">
+        <InfiniteLoading
+          hasMoreItems={hasMoreCharacters}
+          itemHeight={40}
+          loadMoreItems={loadMoreCharacters}
+          placeholder={<div className="item">Loading...</div>}
+          customScrollbar
+          ref={ref}
+        >
+          {characters.map((character, index) => (
+            <div
+              className={`item${index % 2 === 0 ? ' item-striped' : ''}`}
+              key={character.name}
+            >
+              {character.name}
+            </div>
+          ))}
+        </InfiniteLoading>
+      </div>
+      <hr/>
+        <p className="credit">This list was made with <span role="img" aria-label="hearth">❤️</span> by <a href="https://github.com/frinyvonnick/react-simple-infinite-loading">react-simple-infinite-loading</a><br/>Feel free to leave a <span role="img" aria-label="star">⭐️</span></p>
     </div>
   )
 }

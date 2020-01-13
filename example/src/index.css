@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 20px;
@@ -5,11 +9,17 @@ body {
 }
 
 .app {
-  height: 500px;
+  padding: 0 20px;
 }
 
 h1 {
   margin-bottom: 50px;
+  text-align: center;
+  color: #333;
+}
+
+.item-striped {
+  background-color: #f5f5f5;
 }
 
 .item {
@@ -17,5 +27,49 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buttons button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.list-container {
+  max-width: 960px;
+  height: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.credit {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  color: #333;
+}
+
+.credit a {
+  text-decoration: underline;
+  color: #333;
+}
+
+hr {
+  margin: 30px auto;
+  width: 250px;
 }
