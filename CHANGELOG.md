@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.0.0"></a>
+## 1.0.0 (2020-01-13)
+
+### Changed
+
+- 📌 Move to yarn and generate lock file [[1df7044](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/1df7044188018d895e6aa255b4697b5ceb2a8419)]
+- ♻️ Update example to use an api [[a115fda](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/a115fda529fd5d3ec839efaa5a4e15a8f8c0b796)]
+
+### Fixed
+
+- 🐛 Avoid character duplication in example [[2ab85ec](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/2ab85ecf90b7f5263772af88510f211b76e7e99d)]
+
+
 <a name="1.0.0-alpha.8"></a>
 ## 1.0.0-alpha.8 (2020-01-06)
 
