@@ -1,9 +1,34 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import InfiniteLoading from 'react-simple-infinite-loading'
 
+function useStarWarsCharacters() {
+  const [characters, setCharacters] = useState([])
+  const [nextCharactersUrl, setNextCharactersUrl] = useState()
+
+  useEffect(() => {
+    fetch('https://swapi.co/api/people/?page=1')
+      .then(res => res.json())
+      .then(({ next, results }) => {
+        setCharacters(results)
+        setNextCharactersUrl(next)
+      })
+  }, [])
+
+  const loadMoreCharacters = () => {
+    fetch(nextCharactersUrl)
+      .then(res => res.json())
+      .then(({ next, results }) => {
+        setCharacters([...characters, ...results])
+        setNextCharactersUrl(next)
+      })
+  }
+
+  return [{ characters, hasMoreCharacters: Boolean(nextCharactersUrl) }, loadMoreCharacters]
+}
+
 export default function App() {
-  const [items, setItems] = useState([...Array(100)].map((_, index) => index))
   const ref = useRef()
+  const [{ characters, hasMoreCharacters }, loadMoreCharacters] = useStarWarsCharacters()
   const scrollToTop = () => {
     if (ref.current) {
       ref.current.scrollTo(0)
@@ -20,17 +45,6 @@ export default function App() {
     }
   }
 
-  const loadMoreItems = () => {
-    const newItems = [...Array(100)].map((_, index) => items.length + index)
-
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        setItems([...items, ...newItems])
-        resolve()
-      }, 300)
-     })
-  }
-
   return (
     <div className="app">
       <h1>React simple infinite loading example</h1>
@@ -40,13 +54,14 @@ export default function App() {
       <button onClick={resetCache}>Reset cache</button>
       <h2>Start scrolling here :</h2>
       <InfiniteLoading
-        hasMoreItems
+        hasMoreItems={hasMoreCharacters}
         itemHeight={40}
-        loadMoreItems={loadMoreItems}
+        loadMoreItems={loadMoreCharacters}
+        placeholder={<div className="item">Loading...</div>}
         customScrollbar
         ref={ref}
       >
-        {items.map(item => <div className="item" key={item}>{item}</div>)}
+        {characters.map(character => <div className="item" key={character.name}>{character.name}</div>)}
       </InfiniteLoading>
     </div>
   )
