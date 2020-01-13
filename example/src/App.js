@@ -18,8 +18,9 @@ function useStarWarsCharacters() {
     fetch(nextCharactersUrl)
       .then(res => res.json())
       .then(({ next, results }) => {
-        setCharacters([...characters, ...results])
         setNextCharactersUrl(next)
+        if (characters.some(char => char.name === results[0].name)) return
+        setCharacters([...characters, ...results])
       })
   }
 
