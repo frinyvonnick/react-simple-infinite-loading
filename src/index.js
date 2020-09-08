@@ -18,7 +18,8 @@ class InfiniteLoading extends Component {
     children: PropTypes.array.isRequired,
     itemHeight: PropTypes.number.isRequired,
     placeholder: PropTypes.node,
-    customScrollbar: PropTypes.bool
+    customScrollbar: PropTypes.bool,
+    elementClassName: PropTypes.string
   }
 
   constructor(props) {
@@ -59,7 +60,8 @@ class InfiniteLoading extends Component {
       itemHeight,
       loadMoreItems,
       placeholder,
-      customScrollbar
+      customScrollbar,
+      elementClassName
     } = this.props
 
     let effectiveCount = itemsCount
@@ -92,7 +94,7 @@ class InfiniteLoading extends Component {
                 outerElementType={customScrollbar ? CustomScrollbarsVirtualList : null}
               >
                 {({ index, style }) => (
-                  <div style={style}>
+                  <div className={elementClassName} style={style}>
                     {children[index] != null ? children[index] : placeholder}
                   </div>
                 )}
