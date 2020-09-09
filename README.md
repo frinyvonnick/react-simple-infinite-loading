@@ -62,6 +62,7 @@ function Example({ items, fetchMore, hasMore }) {
 | loadMoreItems | no       | function | A function that will be called each time the list need to load more items.                                                                                                                                |
 | placeholder   | no       | node     | Any render-able value like strings or React.Nodes to be displayed while `children` is loading                                                                                                             |
 | customScrollbar   | no       | boolean     | A boolean that determines if [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars) is used instead of native one                                                      |
+| elementClassName   | no       | string     | A React className prop that will be applied to every child container
 | ref   | no       | ref or function     | A ref or a callback ref to get component instance so you can call instance's methods (see [Methods section](/README.md#methods))                                                     |
 
 ## Methods
