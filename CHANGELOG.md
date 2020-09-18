@@ -1,5 +1,22 @@
 # Changelog
 
+<a name="1.1.0"></a>
+## 1.1.0 (2020-09-18)
+
+### Added
+
+- ✨ Add an elementClassName prop ([#43](https://github.com/frinyvonnick/react-simple-infinite-loading/issues/43)) [[e37e615](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/e37e615b1f22a97532a0ac122c5ccb481c114fa3)]
+
+### Changed
+
+- 📌 Refresh lockfiles [[53f4d08](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/53f4d082d42b50dbdbc8c577d682578c54f1a142)]
+- 💄 Improve example style [[49e6a71](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/49e6a710bc6cfb47c5bedc6aa24e9a5b216654cc)]
+
+### Fixed
+
+- 🐛 Fix example [[e11a3ad](https://github.com/frinyvonnick/react-simple-infinite-loading/commit/e11a3ad5d30ffa439c508d071d091027bd467080)]
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2020-01-13)
 
