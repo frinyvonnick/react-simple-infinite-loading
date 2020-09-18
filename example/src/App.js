@@ -6,7 +6,7 @@ function useStarWarsCharacters() {
   const [nextCharactersUrl, setNextCharactersUrl] = useState()
 
   useEffect(() => {
-    fetch('https://swapi.co/api/people/?page=1')
+    fetch('https://swapi.dev/api/people/?page=1')
       .then(res => res.json())
       .then(({ next, results }) => {
         setCharacters(results)
